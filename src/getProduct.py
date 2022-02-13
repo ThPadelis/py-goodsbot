@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def scrapProduct():
+def getProduct():
     URL = "https://www.eshopspecials.gr/"
     page = requests.get(URL)
 

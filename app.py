@@ -1,10 +1,10 @@
 from src.pushNotification import sendNotification
 from src.database import insertProduct
-from src.webScrapper import scrapProduct
+from getProduct import getProduct
 
 
 def main():
-    product = scrapProduct()
+    product = getProduct()
     insertProduct(product)
     title = product["title"]
     text = product["description"] + "\n\n" + product["link"]
