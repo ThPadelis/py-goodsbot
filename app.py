@@ -1,6 +1,6 @@
 from src.pushNotification import sendNotification
 from src.database import insertProduct
-from getProduct import getProduct
+from src.getProduct import getProduct
 
 
 def main():
